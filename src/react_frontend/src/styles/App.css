@@ -1,0 +1,117 @@
+/* md dark color scheme */
+:root{
+  --primary: #6200EE;
+  --pvariant: #3700B3;
+  --secondary: #03DAC5;
+  --svariant: #018786;
+  --background: #FFFFFF;
+  --surface: var(--background);
+  --error: #B00020;
+  --onPrimary: var(--background);
+  --onSecondary: #000000;
+  --onBackground: var(--onSecondary);
+  --onSurface: var(--onSecondary);
+  --onError: var(--background);
+}
+
+body{
+  font-family:'Courier New', Courier, monospace;
+  font-size: x-large;
+  background-color: var(--background);
+  color: var(--onBackground);
+  margin: 1vmin;
+  padding: 1vmin;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+
+header{
+  background-color: var(--primary)
+}
+
+main{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: stretch;
+  
+}
+
+caption{
+  font-size: x-large;
+}
+
+table{
+  border-collapse: collapse;
+  display: table;
+  table-layout: fixed;
+  width: 80%;
+}
+
+th{
+  border: 1px solid var(--onSecondary);
+  font-size: large;
+}
+tr, td{
+  border: 1px solid var(--onSecondary);
+  text-align: center;
+}
+
+td{
+   white-space:pre-wrap;
+   word-break: break-all;
+}
+
+
+nav{
+  position: absolute;
+  top: 10vmin;
+  left: 10vmin;
+  color: var(--onPrimary);
+}
+
+form{
+  width: 70vmin;
+  height: 100%;
+  overflow: scroll;
+}
+
+section, fieldset, legend, label, input, button, select, input[type=date], div {
+  margin: 1vmin;
+  padding: 1vmin;
+  font-family:'Courier New', Courier, monospace;
+  font-size: large;  
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  text-align-last: center;
+}
+
+
+h1, h2, h3{
+  font-family:'Times New Roman', Times, serif;
+}
+
+h1, h2, p{
+  color: var(--onPrimary);
+}
+h3{
+  color: var(--onSecondary);
+}
+
+a:link, a:visited, .icon{
+  color: var(--secondary);
+}
+input[type="date"]{
+  display: block;
+  text-align: center;
+}

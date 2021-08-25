@@ -1,0 +1,21 @@
+{
+  "name": "caruthes_rest",
+  "version": "1.0.0",
+  "description": "Back end for CS290 workout tracking SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rest"
+  ],
+  "author": "Sean Caruthers",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "mongoose": "^5.13.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
